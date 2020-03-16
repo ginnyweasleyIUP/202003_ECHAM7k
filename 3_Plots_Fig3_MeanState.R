@@ -232,3 +232,4 @@ for(run in c("a")){
 
 remove(plot_temp, plot_prec, plot_isot, plot_diff, leg_name, Plot_lyr1, Plot_lyr3, plot, Point_Lyr)
 remove(temp_lyr, prec_lyr)
+#git comment

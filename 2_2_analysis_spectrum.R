@@ -331,3 +331,5 @@ ANALYSIS$SPECTRA$MEAN_SPEC$ITPC$full <- MeanSpectrum(ANALYSIS$SPECTRA$SIM_full$I
 # remove(dist_matrix, entities_spec, entity_gridbox, total_gb, total_lat, counter, data, diff, entity, filter, gridbox,
 #        ii, lat, lat_weight, length, length_cave, name,record, Results, run, site, start_ts, stop_ts, var, easy_sensor_wm4, filter_function3,
 #        simpleawmean, simpleawsd)
+
+#git comment

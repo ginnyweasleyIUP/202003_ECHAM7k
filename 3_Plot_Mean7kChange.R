@@ -73,3 +73,4 @@ plot <- STACYmap(gridlyr = rbind(plot_lyr[49:96,1:48],plot_lyr[1:48,1:48]),
                  ptlyr = point_lyr,
                  centercolor = 0)
 plot
+#git comment
