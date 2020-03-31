@@ -93,6 +93,7 @@ DATA_past7000$SIM_yearly <- list(TEMP = array(dim = c(96,48,abs(diff(DATA_past70
                                  ISOT = array(dim = c(96,48,abs(diff(DATA_past7000$time)))),
                                  ITPC = array(dim = c(96,48,abs(diff(DATA_past7000$time)))))
 
+DATA_past7000$SIM_mean <- list()
 for(var in c("TEMP", "PREC", "ISOT")){
 #for(var in c("PREC", "ISOT")){
   DATA_past7000_SIM_RAW <- list()
@@ -114,9 +115,9 @@ for(var in c("TEMP", "PREC", "ISOT")){
   print("Data in ...")
   
   test_NA <- array(dim = c(96,48,7))
-  DATA_past7000_SIM_RAW$TEMP <- abind::abind(test[,,1:66557], test_NA, test[,,66558:83957], along = 3)
-  DATA_past7000_SIM_RAW$lon <- ncf$dim$lon$vals
-  DATA_past7000_SIM_RAW$lat <- ncf$dim$lat$vals
+  DATA_past7000_SIM_RAWTEMP <- abind::abind(test[,,1:66557], test_NA, test[,,66558:83957], along = 3)
+  DATA_past7000$SIM_mean$lon <- ncf$dim$lon$vals
+  DATA_past7000$SIM_mean$lat <- ncf$dim$lat$vals
   ncdf4::nc_close(ncf)
   
   print("Extract grid boxes ...")
